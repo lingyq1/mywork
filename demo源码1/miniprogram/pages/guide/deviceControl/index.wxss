@@ -1,0 +1,143 @@
+/* pages/guide/deviceControl/index.wxss */
+page {
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8fbff;
+}
+
+.uploader {
+  width: 90%;
+  margin-top: 40rpx;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+  height: auto;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.uploader-text {
+  width: 100%;
+  line-height: 52px;
+  font-size: 34rpx;
+  color: #22242c;
+}
+
+.info-title {
+  margin-top: 20px;
+  text-align: center;
+  font-family: PingFangSC-Semibold;
+  font-size: 20px;
+  color: #22242c;
+}
+.family-title {
+  margin-top: 20px;
+  font-family: PingFangSC-Semibold;
+  font-size: 20px;
+  color: #22242c;
+}
+
+.info-label {
+  margin-top: 15px;
+  width: 100%;
+  font-family: PingFangSC-Semibold;
+  font-size: 15px;
+  color: #22242c;
+}
+
+.devItem {
+  margin-top: 36rpx;
+  height: 80rpx;
+  padding: 76rpx 96rpx;
+  width: 300rpx;
+  display: flex;
+  align-items: center;
+	background-color: #fff;
+	box-shadow: 0rpx 22rpx 42rpx 0rpx 
+		rgba(43, 43, 43, 0.1);
+	border-radius: 16rpx;
+}
+
+.devItem-img {
+  width:  102rpx;
+  height: 80rpx;
+}
+.devItem-img1 {
+  width:  30rpx;
+  height: 30rpx;
+}
+
+.devItem-title {
+  margin-left: 15rpx;
+  width: 75%;
+	/* height: 24rpx; */
+	font-family: PingFangSC-Semibold;
+  font-size: 24rpx;
+  /* flex: 1; */
+	color: #495054;
+}
+.default{
+  font-size: 20rpx;
+  color: #495054;
+  font-family: PingFangSC-Semibold;
+  margin-left: 15rpx;
+}
+
+.selector{
+  width: 300rpx;
+  height:220rpx;
+  background-color: #fff;
+  border-radius: 32rpx;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 56rpx;
+  margin:24rpx ;
+  flex-direction: column;
+  padding: 2%;
+  box-sizing: border-box;
+}
+.card {
+  width: 700rpx;
+  height: auto;
+  display:flex; 
+  flex-direction:row;
+   flex-wrap:wrap;
+   /* 不知道这个行不行 */
+   justify-content: space-between;
+}
+.addselector{
+  width: 300rpx;
+  /* height:100rpx; */
+  background-color: #fff;
+  border-radius: 32rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:24rpx ;
+  flex-direction: column;
+  padding: 5% 0;
+  box-sizing: border-box;
+}
+.addtextstyle{
+  width: 75%;
+	height: 24rpx;
+	font-family: PingFangSC-Semibold;
+  font-size: 24rpx;
+  flex: 1;
+	color: #22242c;
+}
+.tabbar{
+  width: 654rpx;
+  background-color: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

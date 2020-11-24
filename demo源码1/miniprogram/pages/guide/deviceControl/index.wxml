@@ -1,0 +1,43 @@
+<!--pages/guide/deviceControl/index.wxml-->
+
+<block wx:if="{{errText === ''}}">
+  <view class="tabbar">
+    <view class="uploader-text" bindtap="">
+      18302088481的家
+    </view> 
+    <image class="devItem-img1" src="/image/icon-more.png" bindtap=""></image>
+  </view>
+  <view class="tarbar">
+
+  </view>
+
+<view class="card">
+  <block wx:for="{{deviceList}}" wx:key="{{item.id}}" > 
+    <view class="selector" data-devid="{{item.id}}" data-name="{{item.name}} " bindtap="turnDeviceOn">
+      <image class="devItem-img" src="https://images.tuyacn.com/{{item.icon}}"></image>
+      <view class="devItem-title">{{item.name}}</view>
+      <view class="default">默认房间</view>
+    </view>
+  </block>
+  <view class="addselector">
+    <image class="devItem-img1" src="/image/icon-more.png" bindtap=""></image>
+    <view>添加设备</view>
+  </view>
+</view>
+</block>
+
+<block wx:if="{{errText !== ''}}">
+  <view class="info-title">
+    请在添加设备后再体验设备控制
+  </view>
+  <view class="uploader">
+    <view class="uploader-text" bindtap="gotoApNetwork">
+      AP配网
+    </view> 
+  </view>
+  <view class="uploader">
+    <view class="uploader-text" bindtap="gotoVirtualNetwork">
+      扫码配网(虚拟设备)
+    </view> 
+  </view>
+</block>

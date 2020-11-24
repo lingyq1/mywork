@@ -1,0 +1,34 @@
+/* miniprogram/pages/deviceDisplay/deviceList/deviceConnect/index.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 32rpx;
+}
+image{
+  width: 654rpx;
+  height: 400rpx;
+  margin-bottom: 250rpx;
+}
+
+.queue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio {
+  background-color: #dddddd;
+}
+
+.btn{
+  width: 654rpx;
+  height: 80rpx;
+  border-radius: 32rpx;
+  
+  text-align: center;
+  margin-top: 32rpx;
+  /* 垂直对齐就这样用，设置为和父元素height相同 */
+  line-height: 80rpx;
+}

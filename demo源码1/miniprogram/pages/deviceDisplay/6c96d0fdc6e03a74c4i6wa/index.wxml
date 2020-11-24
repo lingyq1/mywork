@@ -1,0 +1,14 @@
+
+<view class="back">
+  <image src="/image/icon_API.png"></image>
+  <view class="">-设备{{ online==true ? '在线' :'离线' }}-</view>
+</view>
+
+<view class="warn">
+<view class="warntitle">报警日志</view>
+<view class="warnreport">
+  <view>触发报警</view>
+  <view>2020-11-05 08:27</view>
+</view>
+</view>
+

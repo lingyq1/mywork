@@ -1,0 +1,35 @@
+/* miniprogram/pages/deviceDisplay/index1/index1.2/index1.2.wxss */
+.back{
+  width: inherit;
+  height: 600rpx;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+}
+
+.warn{
+  margin-top:10rpx ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.warntitle{
+  width: 654rpx;
+  height: 60rpx;
+  /* margin-left: 48rpx; */
+ 
+}
+.warnreport{
+  box-sizing: border-box;
+  background-color: #E6E6E6;
+  width: 654rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15rpx;
+}

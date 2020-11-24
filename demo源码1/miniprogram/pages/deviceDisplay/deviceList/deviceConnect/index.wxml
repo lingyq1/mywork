@@ -1,0 +1,12 @@
+<!--miniprogram/pages/deviceDisplay/deviceList/deviceConnect/index.wxml-->
+<view class="container">
+  <view>通电后按图示进行操作</view>
+  <view>长按配网按键直到灯光闪烁。</view>
+  <image src="/image/icon_API_HL.png" ></image>
+ 
+   <view class="queue" bindtap="select">
+    <radio class="blue" id="bind"></radio>  
+    <label for="bind">已按图示操作</label>
+  </view>
+   <view class="btn" data-devid="{{devid}}" bindtap="{{status ? 'startToNetwork' : 'key'}}" style="background-color:{{backgroundcolor}};color:{{color}};">下一步</view>
+ </view>

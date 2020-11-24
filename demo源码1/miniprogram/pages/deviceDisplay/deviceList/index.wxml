@@ -1,0 +1,11 @@
+
+<view class="selector" bindtap="gotoVirtualNetwork" >
+  <image class="image1" src="/image/scanCode.jpg"  ></image>
+  <view>扫码添加</view>
+</view>
+<view class="container">
+<view class="selector1" bindtap="connectNetwork" data-devid="{{devid}}">
+  <image class="image2" src="https://images.tuyacn.com/smart/icon/ay1547717234929R2AZO/1d52124535fcb7300858a36b1ab60125.png"></image>
+  <view>声光报警器</view>
+</view>
+</view>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="height=device-height">
+    <title>Title</title>
+
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/echarts.js"></script>
+
+    <link rel="stylesheet" href="sleepData.css">
+
+</head>
+<body>
+<div class="main-box">
+
+
+    <div class="top-box">
+    <div class="person-info white-background" >
+        <img src="pic/组%20140.png" class="avatar">
+        <div style="text-align: center">
+            <p>杜小明</p>
+            <p>上海市浦东新区龙阳路345号新国际博览中心</p>
+        </div>
+        <button type="button" class="blue-button">
+            <img src="pic/icon-离床.png">
+            <span>离床</span>
+        </button>
+
+    </div>
+
+        <div class="chart-box">
+            <div class="title white-background"><span>全天睡眠比例</span></div>
+            <div class="white-background chart">
+                <div id="tu1" style="height: 100%;" ></div>
+            </div>
+        </div>
+
+        <div class="chart-box">
+            <div class="title white-background"><span>最近7天睡眠趋势</span></div>
+            <div class="white-background chart">
+                <div id="tu2" style="height: 100%"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="bottom-box">
+        <div class="big-chart-box white-background">
+            <div class="title">
+                <img src="pic/组%20133.png" class="icon">
+                <span >心率</span>
+            </div>
+            <div id="tu3" style="height: 85%"></div>
+            <p class="bottom-text">*正常人安静状态下每分钟的心跳次数一般为60-100次/分</p>
+        </div>
+
+        <div class="big-chart-box white-background">
+            <div class="title">
+                <img src="pic/呼吸.png" class="icon">
+                <span >呼吸</span>
+            </div>
+            <div id="tu4" style="height: 85%"></div>
+            <p class="bottom-text">*正常人安静状态下每分钟的呼吸次数一般为5-30次/分</p>
+        </div>
+
+    </div>
+
+
+</div>
+<script src="js/sleepData.js"></script>
+</body>
+</html>

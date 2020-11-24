@@ -1,0 +1,193 @@
+
+html {
+    font-size: 1.4vh;
+}
+body {
+    margin: 0;
+}
+div{
+    box-sizing: border-box;
+}
+
+p{
+    display: block;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+.white-background {
+    background: #FFF;
+    box-shadow: 0rem 0rem 1rem rgba(78,112,184,0.1);
+    border-radius: 10px;
+}
+
+.main-box {
+    padding: 3.3rem 2rem;
+    background: #FBFCFD;
+    height: 100vh;
+    /*rgba(40,191,221,0.2);*/
+}
+.main-box .top-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-box .top-box .person-info {
+ flex: 0 1 24%;
+    height: 45vh;
+    padding: 2.67rem 3.75rem 3.67rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/*大屏幕：大于等于1300px*/
+@media screen only (min-width: 1300px) {
+    /*html {*/
+    /*    font-size: 8px;*/
+    /*}*/
+     .main-box .top-box .person-info p:nth-of-type(1){
+         font-size: 3rem;
+         font-family:"PingFang SC";
+         font-weight:  bold;
+         line-height: 3rem;
+         color: rgba(44,46,52,1);
+         margin: 1rem 0;
+     }
+    .main-box .top-box .person-info p:nth-of-type(2){
+        font-size:2.8rem;
+        font-family:"PingFang SC";
+        font-weight:  400;
+        line-height: 2.5rem;
+        color: rgba(44,46,52,1);
+        /*margin: 1rem 0;*/
+    }
+}
+
+@media (min-width: 1100px) {
+    .main-box .top-box .person-info p:nth-of-type(1){
+        font-size: 2.5rem;
+        font-family: PingFang SC;
+        font-weight: bold;
+        line-height: 2.7rem;
+        color: rgba(44, 46, 52, 1);
+    }
+    .main-box .top-box .person-info p:nth-of-type(2){
+        font-size:2.2rem;
+        font-family: PingFang SC;
+        font-weight: 400;
+        line-height: 2.5rem;
+        color: rgba(44, 46, 52, 1);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1099px) {
+    .main-box .top-box .person-info p:nth-of-type(1){
+        font-size: 1.67rem;
+        font-family: PingFang SC;
+        font-weight: bold;
+        line-height: 2.33rem;
+        color: rgba(44, 46, 52, 1);
+    }
+
+
+
+    .main-box .top-box .person-info p:nth-of-type(2){
+        font-size: 1.5rem;
+        font-family: PingFang SC;
+        font-weight: 400;
+        line-height: 1.75rem;
+        color: rgba(44, 46, 52, 1);
+    }
+}
+
+.main-box .top-box .person-info .avatar {
+    width: 7.83rem;
+    height: 7.83rem;
+    border-radius: 50%;
+    border: 2px solid rgba(195,215,255,1);
+}
+.main-box .top-box .person-info .blue-button {
+    width: 7.5rem;
+    height: 2.83rem;
+    background: rgba(55,117,246,1);
+    opacity: 1;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.67rem;
+    font-family: "PingFang SC";
+    font-weight: 400;
+    line-height: 2.33rem;
+    color: rgba(255,255,255,1);
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box .top-box .person-info .blue-button .white-icon {
+    width: 1.83rem;
+    height: 1.83rem;
+}
+
+.main-box .top-box .chart-box {
+    flex: 0 1 36%;
+    height: 45vh;
+}
+
+.main-box .top-box .chart-box .title {
+    padding: 1.5vh;
+    font-size: 1.67rem;
+    height: 5.5vh;
+    font-family: "PingFang SC";
+    font-weight: bold;
+    line-height: 2.33rem;
+    color:rgba(44,46,52,1);
+}
+
+.main-box .top-box .chart-box .chart {
+    height:calc(45vh - 5.5vh - 2vh);
+    margin: 2vh 0;
+}
+.main-box .bottom-box {
+    display: flex;
+    margin-top: 3vh;
+    justify-content: space-between;
+}
+.main-box .bottom-box .big-chart-box {
+    height: 45vh;
+    flex:0 1 49%;
+    padding: 3vh;
+}
+
+.main-box .bottom-box .big-chart-box .title {
+     display: flex;
+    align-items: center;
+}
+
+.main-box .bottom-box .big-chart-box .title .icon {
+    width: 2.33rem;
+    height: 2.33rem;
+    margin-right: 1rem;
+}
+
+.main-box .bottom-box .big-chart-box .title span {
+    font-size: 1.67rem;
+    font-family: "PingFang SC";
+    font-weight: bold;
+    line-height: 2.33rem;
+    color: #2C2E34;
+}
+
+.main-box .bottom-box .big-chart-box  .bottom-text {
+    font-size: 1rem;
+    font-family: "PingFang SC";
+    font-weight: 400;
+    line-height: 1.42rem;
+    color: #6a6f7a;
+    margin-left: 2.7rem;
+}
+

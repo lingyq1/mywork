@@ -1,0 +1,45 @@
+<!-- miniprogram/pages/deviceDisplay/index1/index1.1/index1.1.wxml -->
+
+<view class="back">
+  <image src="/image/icon_API.png"></image>
+  <view class="">-设备{{ options.online ==true ? '在线' :'离线' }}-</view>
+</view>
+
+<block class="center">
+<scroll-view scroll-x="true" class="weui  -navbar" >
+ <block wx:for-items="{{tabs}}">
+ <view id="{{index}}" class="{{activeIndex == index ?'item_on':''}} default-item" bindtap="tabClick" style="width:{{tabW}}px">
+ {{item}}
+ </view>
+ </block>
+ <view class="weui-navbar-slider" style="transform:translateX({{slideOffset}}px);"></view>
+</scroll-view>
+</block>
+
+<!-- <view class="rec" /> -->
+<swiper current="{{activeIndex}}" class="swiper-box" duration="100" bindchange="bindChange">
+ <swiper-item class="swiper-item">
+ <view class="slide-view" bindtap="addDevice" data-devid="{{devid}}">
+   <image class="image" src="/image/addDevicebtn@2x.png"></image>
+   <view >添加设备</view>
+ </view>
+ <block wx:if="{{devicelistsub.length >0}}">
+   <block wx:for="{{devicelistsub}}" wx:key="{{item.id}}">
+ <view class="slide-view" style="justify-content: space-between;"  data-name="{{item.name}}" data-devid="{{item.id}}" bindtap="turnDeviceOn">
+   <view class="range" >
+   <image class="image" src="https://images.tuyacn.com/{{item.icon}}" ></image>
+   <text>{{item.name}}</text>
+   </view>
+   <view>{{item.online ==true ?'在线' :'离线' }}</view>
+ </view>
+</block>
+</block>
+ </swiper-item>
+
+ <swiper-item class="swiper-item">
+ <view class="slide-view1">
+   <view>按键报警</view>
+   <view>2020-11-05 08：27</view>
+ </view>
+ </swiper-item>
+</swiper>
